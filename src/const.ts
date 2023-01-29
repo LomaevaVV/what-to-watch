@@ -19,3 +19,18 @@ export enum GenreFilter {
   Thrillers = 'Thrillers'
 }
 
+export const APIRoute = {
+  Films: '/films',
+} as const;
+
+export enum NameSpace {
+  DataFilms = 'FILMS',
+}
+
+export const enum FetchStatus {
+  Idle = 'IDLE',
+  Loading = 'LOADING',
+  Success = 'SUCCESS',
+  Rejected = 'REJECTED',
+}
+

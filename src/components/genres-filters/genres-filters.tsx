@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { GenreFilter } from '../../const';
 
-export default function Catalog(): JSX.Element {
+export default function GenreFilters(): JSX.Element {
   return (
     <ul className="catalog__genres-list">
       {
