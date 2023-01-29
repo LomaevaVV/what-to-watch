@@ -4,7 +4,7 @@ import { Films } from '../../types/film';
 import { fetchFilmsAction} from '../api-actions';
 
 type DataFilms = {
-  films: Films;
+  films: Films | [];
   filmsFetchStatus: string;
 };
 
