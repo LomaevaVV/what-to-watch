@@ -8,7 +8,7 @@ export enum AppRoute {
 }
 
 export enum GenreFilter {
-  AllGenres = '/',
+  AllGenres = 'All genres',
   Comedies = 'Comedies',
   Documentary = 'Documentary',
   Dramas = 'Dramas',
@@ -21,10 +21,12 @@ export enum GenreFilter {
 
 export const APIRoute = {
   Films: '/films',
+  Login: '/login'
 } as const;
 
 export enum NameSpace {
   DataFilms = 'FILMS',
+  User = 'USER',
 }
 
 export const enum FetchStatus {
@@ -32,5 +34,11 @@ export const enum FetchStatus {
   Loading = 'LOADING',
   Success = 'SUCCESS',
   Rejected = 'REJECTED',
+}
+
+export enum AuthorizationStatus {
+  Auth = 'AUTH',
+  NoAuth = 'NO_AUTH',
+  Unknown = 'UNKNOWN'
 }
 
