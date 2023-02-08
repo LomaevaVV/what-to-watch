@@ -6,8 +6,9 @@ import App from './components/app/app';
 import HistoryRouter from './components/history-route/history-route';
 import ScrollToTop from './components/scroll-to-top/scroll-to-top';
 import { store } from './store';
-import { fetchFilmsAction } from './store/api-actions';
+import { checkAuthAction, fetchFilmsAction } from './store/api-actions';
 
+store.dispatch(checkAuthAction());
 store.dispatch(fetchFilmsAction());
 
 const root = ReactDOM.createRoot(
