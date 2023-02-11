@@ -12,7 +12,7 @@ export default function Header(): JSX.Element {
   return (
     <header className="page-header film-card__head">
       <div className="logo">
-        <Link to='#' className="logo__link">
+        <Link to={AppRoute.Main} className="logo__link">
           <span className="logo__letter logo__letter--1">W</span>
           <span className="logo__letter logo__letter--2">T</span>
           <span className="logo__letter logo__letter--3">W</span>
@@ -34,10 +34,7 @@ export default function Header(): JSX.Element {
         <div className="user-block">
           <Link
             className="user-block__link"
-            to={AppRoute.Main}
-            onClick={(evt) => {
-              evt.preventDefault();
-            }}
+            to={AppRoute.SignIn}
           >
           Sign in
           </Link>
