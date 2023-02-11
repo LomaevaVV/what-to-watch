@@ -21,7 +21,8 @@ export enum GenreFilter {
 
 export const APIRoute = {
   Films: '/films',
-  Login: '/login'
+  Login: '/login',
+  Logout: '/logout',
 } as const;
 
 export enum NameSpace {
